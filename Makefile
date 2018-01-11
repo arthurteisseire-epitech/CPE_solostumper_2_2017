@@ -32,3 +32,6 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+test_run:
+	make test_run -C tests
