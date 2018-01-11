@@ -9,5 +9,6 @@
 #define PALINDROME_H
 
 int is_palindrome(char *str);
+char low_case(char c);
 
 #endif

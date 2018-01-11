@@ -6,17 +6,29 @@
 */
 
 #include "my.h"
+#include "palindrome.h"
 
 int is_palindrome(char *str)
 {
 	int end = my_strlen(str) - 1;
 	int begin = 0;
 
+	if (end == -1)
+		return (0);
 	while (end > 0) {
+		str[end] = low_case(str[end]);
+		str[begin] = low_case(str[begin]);
 		if (str[end] != str[begin])
 			return (0);
 		begin++;
 		end--;
 	}
 	return (1);
+}
+
+char low_case(char c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (c + 'a' - 'A');
+	return (c);
 }
