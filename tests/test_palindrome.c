@@ -35,3 +35,8 @@ Test(palindrome, failure)
 	cr_assert(is_palindrome("NnA") == 0);
 	cr_assert(is_palindrome("hAAa") == 0);
 }
+
+Test(palindrome, empty_chain)
+{
+	cr_assert(is_palindrome("") == 0);
+}
