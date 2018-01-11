@@ -20,7 +20,7 @@ int main(int ac, char **av)
 	if (is_palindrome(av[1])) {
 		my_putstr("palindrome!\n");
 	} else {
-		my_puterror("not a palindrome.\n");
+		my_putstr("not a palindrome.\n");
 	}
 	return (0);
 }
