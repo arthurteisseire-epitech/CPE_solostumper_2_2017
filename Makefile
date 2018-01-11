@@ -33,5 +33,5 @@ fclean: clean
 
 re: fclean all
 
-test_run:
+test_run: re
 	make test_run -C tests
