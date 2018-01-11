@@ -16,9 +16,7 @@ int is_palindrome(char *str)
 	if (end == -1)
 		return (0);
 	while (end > 0) {
-		str[end] = low_case(str[end]);
-		str[begin] = low_case(str[begin]);
-		if (str[end] != str[begin])
+		if (low_case(str[end]) != low_case(str[begin]))
 			return (0);
 		begin++;
 		end--;
