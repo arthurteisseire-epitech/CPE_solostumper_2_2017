@@ -17,10 +17,9 @@ int main(int ac, char **av)
 		my_puterror("Error:  too much arguments.\n");
 		return (84);
 	}
-	if (is_palindrome(av[1])) {
+	if (is_palindrome(av[1]))
 		my_putstr("palindrome!\n");
-	} else {
+	else
 		my_putstr("not a palindrome.\n");
-	}
 	return (0);
 }
