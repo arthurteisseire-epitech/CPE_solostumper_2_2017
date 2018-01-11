@@ -13,8 +13,6 @@ int is_palindrome(char const *str)
 	int end = my_strlen(str) - 1;
 	int begin = 0;
 
-	if (end == -1)
-		return (0);
 	while (end > 0) {
 		if (low_case(str[end]) != low_case(str[begin]))
 			return (0);

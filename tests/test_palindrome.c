@@ -38,5 +38,5 @@ Test(palindrome, failure)
 
 Test(palindrome, empty_chain)
 {
-	cr_assert(is_palindrome("") == 0);
+	cr_assert(is_palindrome("") == 1);
 }
