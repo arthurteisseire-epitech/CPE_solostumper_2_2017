@@ -11,10 +11,10 @@
 int main(int ac, char **av)
 {
 	if (ac < 2) {
-		my_puterror("Error: not enough arguments.\n");
+		my_puterror("Error:  not enough arguments.\n");
 		return (84);
 	} else if (ac > 2) {
-		my_puterror("Error: too much arguments.\n");
+		my_puterror("Error:  too much arguments.\n");
 		return (84);
 	}
 	if (is_palindrome(av[1])) {
