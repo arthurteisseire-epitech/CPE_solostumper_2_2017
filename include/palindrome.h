@@ -8,7 +8,7 @@
 #ifndef PALINDROME_H
 #define PALINDROME_H
 
-int is_palindrome(char *str);
-char low_case(char c);
+int is_palindrome(char const *str);
+char low_case(char const c);
 
 #endif

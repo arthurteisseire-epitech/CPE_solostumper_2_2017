@@ -8,7 +8,7 @@
 #include "my.h"
 #include "palindrome.h"
 
-int main(int ac, char **av)
+int main(int ac, char const * const *av)
 {
 	if (ac < 2) {
 		my_puterror("Error:  not enough arguments.\n");

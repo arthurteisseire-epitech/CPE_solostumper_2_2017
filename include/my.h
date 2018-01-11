@@ -10,8 +10,8 @@
 
 #include <unistd.h>
 
-void my_puterror(char *str);
-void my_putstr(char *str);
-int my_strlen(char *str);
+void my_puterror(char const *str);
+void my_putstr(char const *str);
+int my_strlen(char const *str);
 
 #endif

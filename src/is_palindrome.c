@@ -8,7 +8,7 @@
 #include "my.h"
 #include "palindrome.h"
 
-int is_palindrome(char *str)
+int is_palindrome(char const *str)
 {
 	int end = my_strlen(str) - 1;
 	int begin = 0;
@@ -24,7 +24,7 @@ int is_palindrome(char *str)
 	return (1);
 }
 
-char low_case(char c)
+char low_case(char const c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 'a' - 'A');
